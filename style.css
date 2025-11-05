@@ -1,0 +1,205 @@
+/* Global reset */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #000; /* black text */
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6); /* subtle white glow */
+}
+
+/* Shared container styles */
+.main-container, .scoreboard {
+  background: rgba(255, 255, 255, 0.7); /* lighter glass */
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 500px;
+  width: 90%;
+  color: #000;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 2px 3px rgba(255,255,255,0.8);
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: #000;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.7);
+}
+
+/* Options on main page */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Base button styles */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.08);
+  color: #000;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+button:hover {
+  background: rgba(0,0,0,0.18);
+  transform: translateY(-1px);
+}
+button:active {
+  transform: translateY(0);
+}
+
+/* +1 button (green) */
+button.plus {
+  background: rgba(0, 200, 0, 0.25);
+}
+button.plus:hover {
+  background: rgba(0, 200, 0, 0.45);
+}
+
+/* -1 button (red) */
+button.minus {
+  background: rgba(200, 0, 0, 0.25);
+}
+button.minus:hover {
+  background: rgba(200, 0, 0, 0.45);
+}
+
+/* Team sections */
+.team {
+  margin: 20px 0;
+}
+
+/* Player name inputs */
+.team-name {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  color: #000;
+  border-bottom: 1px solid rgba(0,0,0,0.7);
+  outline: none;
+  padding: 5px;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+.team-name::placeholder {
+  color: rgba(0,0,0,0.55);
+}
+
+/* Score display */
+.score {
+  font-size: 3em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 2px 3px rgba(255,255,255,0.8);
+}
+
+/* Set history */
+.sets {
+  margin-top: 20px;
+}
+
+#setHistory {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#setHistory li {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #000;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+/* Back button distinct style */
+.scoreboard button:last-of-type {
+  margin-top: 20px;
+  background: rgba(100, 100, 100, 0.18);
+}
+.scoreboard button:last-of-type:hover {
+  background: rgba(100, 100, 100, 0.35);
+}
+
+.results-container {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 600px;
+  width: 90%;
+  color: #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+#setBreakdown {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+#setBreakdown li {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #000;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: rgba(0,0,0,0.1);
+  font-weight: bold;
+}

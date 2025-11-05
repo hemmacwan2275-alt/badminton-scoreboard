@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badminton Scoreboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scoreboard">
+    <h1>🏸 Badminton Scoreboard</h1>
+    <p id="matchTypeLabel"></p>
+
+    <div class="teams">
+      <div class="team" id="teamA">
+        <div class="players" id="playersA"></div>
+        <div class="score">0</div>
+        <button class="plus" onclick="updateScore('A', 1)">+1</button>
+        <button class="minus" onclick="updateScore('A', -1)">-1</button>
+      </div>
+
+      <div class="team" id="teamB">
+        <div class="players" id="playersB"></div>
+        <div class="score">0</div>
+        <button class="plus" onclick="updateScore('B', 1)">+1</button>
+        <button class="minus" onclick="updateScore('B', -1)">-1</button>
+      </div>
+    </div>
+
+    <div class="sets">
+      <h2>Set History</h2>
+      <ul id="setHistory"></ul>
+      <p id="setStatus">Set: 1</p>
+    </div>
+
+    <button onclick="goBack()">⬅ Back to Main Menu</button>
+  </div>
+
+  <script src="scoreboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Results</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="results-container">
+    <h1>🏆 Match Results</h1>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Players</th>
+          <th>Sets Won</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2 id="winnerAnnouncement"></h2>
+    <h2>Set-by-Set Scores</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Set</th>
+      <th>Score</th>
+      <th>Winner</th>
+    </tr>
+  </thead>
+  <tbody id="setTableBody"></tbody>
+</table>
+
+    <button onclick="goHome()">← Back to Main Menu</button>
+  </div>
+
+  <script src="result.js"></script>
+</body>
+</html>
